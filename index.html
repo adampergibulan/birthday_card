@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Card Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎂 Birthday Card Generator 🎂</h1>
+            <p>Create a personalized birthday card in seconds!</p>
+        </header>
+
+        <div class="form-section">
+            <form id="birthdayForm">
+                <div class="input-group">
+                    <label for="userName">Your Name:</label>
+                    <input type="text" id="userName" placeholder="Enter your name" required>
+                </div>
+                
+                <div class="input-group">
+                    <label for="userAge">Your Age:</label>
+                    <input type="number" id="userAge" placeholder="Enter your age" min="1" max="120" required>
+                </div>
+                
+                <button type="submit" id="generateBtn">🎉 Generate Birthday Card 🎉</button>
+            </form>
+        </div>
+
+        <div id="cardContainer" class="card-container">
+            <!-- Generated birthday card will appear here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
